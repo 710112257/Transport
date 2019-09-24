@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="中集速运、中集速运" name="keywords">
+    <meta content="中集速运、中集速运" name="description">
+    <meta content="Li Zhen Ya Team" name="author">
+    <title>中集速运-用户首页</title>
+    {{template "user/include/head.html" .}}
+
+</head>
+
+<body>
+
+{{template "user/include/user_top.html" .}}
+
+<section id="user-index">
+    <div class="user-content">
+        <div class="user-middle">
+            <div class="user-boxes  clearfix">
+                <div class="fl user-boxes-fl"style="width: 400px">
+                    <div class="fl user-portrait-br"><img src="../static/img/user/u-portrait.png" width="134" height="134"></div>
+                    <div class="fl user-portrait-ti">
+                        <h2>{{.data.username}}</h2>
+                        <p>用户类型：<span>个人</span></p>
+                        <p>用户标识：<span>CJY</span></p>
+                    </div>
+                </div>
+                <div class="fr user-boxes-fr">
+                    <p>账户总余额：</p>
+                    <p><span>{{.data.money}}</span>元</p>
+                    <p><a href="#">在线充值</a> </p>
+                </div>
+            </div>
+        </div>
+        <div class="user-boxes-bk">
+           <div class="user-boxes-ma">
+               <div class="user-notice"><h3>网站公告</h3></div>
+               <div class="user-present">
+                   <ul>
+                       <li>填写包裹信息前，请先将包裹打包、称重，并按照实重填写。从03.02.14开始由于DHL计重规则的调整，DHL开始对超重执行0容忍，大于0.001kg则按下一个重量级计价。为了包裹能快速出库，推荐大家买单时多预估点包装耗材以及预留0.1kg的国际单的重量。</li>
+                       <li>超重的包裹需按4欧/公斤补款后才能出库。补款连接：http://item.taobao.com/item.htm?id=38631607995(PS: 易欧洲推出了每走20个包裹可以自动减免1公斤的超重补款，具体细则请看公告：易欧洲-积分升重细则）</li>
+                       <li>订单一旦点击提交，则无法自行更改；若有错误</li>
+
+                   </ul>
+               </div>
+           </div>
+            <div class="user-boxes-ma">
+                <div class="user-notice user-notice-cl"><h3>系统说明</h3></div>
+                <div class="user-present">
+                    <ul>
+                        <li>填写包裹信息前，请先将包裹打包、称重，并按照实重填写。从03.02.14开始由于DHL计重规则的调整，DHL开始对超重执行0容忍，大于0.001kg则按下一个重量级计价。为了包裹能快速出库，推荐大家买单时多预估点包装耗材以及预留0.1kg的国际单的重量。</li>
+                        <li>超重的包裹需按4欧/公斤补款后才能出库。补款连接：http://item.taobao.com/item.htm?id=38631607995(PS: 易欧洲推出了每走20个包裹可以自动减免1公斤的超重补款，具体细则请看公告：易欧洲-积分升重细则）</li>
+                        <li>订单一旦点击提交，则无法自行更改；若有错误</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div style="height:65px;"></div>
+            <div style="height:65px;"></div>
+        </div>
+        <div style="height:65px;"></div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="lzy-adaption">
+        <div class="lzy-copyright">
+            <p>Copyright © 2012 xLobo.com, YMT GLOBAL. All Rights Reserved. 沪ICP备16004361号</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

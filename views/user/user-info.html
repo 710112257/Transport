@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="中集速运、中集速运" name="keywords">
+    <meta content="中集速运、中集速运" name="description">
+    <meta content="Li Zhen Ya Team" name="author">
+    <title>中集速运-发件人地址</title>
+    {{template "user/include/head.html" .}}
+
+</head>
+<style>
+    #editpassword_tip{
+        color: red;
+        padding-left: 20px;
+    }
+</style>
+<body>
+
+{{template "user/include/user_top.html" .}}
+<section>
+    <div class="lzy-content lzy-content-order">
+        <div class="lzy-boxes lzy-boxes-order clearfix">
+            <div class="tabPanel clearfix">
+                <ul>
+                    <li class="hit">用户信息</li>
+                    <li>收件人地址薄</li>
+                    <li>发件人地址薄</li>
+                    <li>密码修改</li>
+                </ul>
+                <div class="panes">
+                    <div class="pane"  style="display:block;">
+                        <div class="panes-tab user-info-tab">
+                            <h3>个人信息完善</h3>
+                        </div>
+                        <form class="form-horizontal" action="/user/info" method="post">
+                        <div class="login_m">
+                            <div class="login_boder">
+                                <div class="login_padding">
+                                    <h2>手机</h2>
+                                    <label>
+                                        <input type="text" placeholder="" value="{{.data.userPhone}}" class="txt_input txt_input2" name="userPhone" id="userPhone">
+                                    </label>
+
+                                    <h2>姓名</h2>
+                                    <label>
+                                        <input type="text" placeholder="" value="{{.data.chinaName}}" class="txt_input txt_input2" name="chinaName" id="chinaName">
+                                    </label>
+                                    <h2>微信</h2>
+                                    <label>
+                                        <input type="text" class="txt_input"  value="{{.data.weiXin}}" id="weixin" name="weiXin">
+                                    </label>
+                                    <h2>QQ</h2>
+                                    <label>
+                                        <input type="text" class="txt_input"  value="{{.data.qQ}}" id="qq" name="qQ">
+                                    </label>
+
+                                    <div class="rem_sub">
+                                        <div class="clearfix"><input type="submit" value="保 存" id="button" name="button" class="sub_button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+
+                    <div class="pane">
+                        <div class="panes-tab recipient-tab">
+                            <h3>收件人地址薄</h3>
+                        </div>
+                        <div class="lzy-tab2">
+                            <table width="1089" border="0" cellspacing="0" cellpadding="0" class="tab-pick">
+                                <tr>
+                                    <td>收件人姓名/电话 <input placeholder="" value="" name="" ></td>
+                                    <td align="right"><a href="#">新建收件人</a></td>
+                                </tr>
+                            </table>
+                            <table width="1089" border="0" cellspacing="0" cellpadding="0" class="tab-pick-bk tab-capital">
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>电话</th>
+                                    <th>城市</th>
+                                    <th>地址</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>邓杰</td>
+                                    <td>18611688681</td>
+                                    <td>北京</td>
+                                    <td>朝阳区北苑路</td>
+                                    <td><a href="#">修改资料</a>|<a href="#">删除</a></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="lzy-page clearfix">
+                            <a class="previous" href="#">上一页</a>
+                            <a class="or" href="#">1</a>
+                            <a href="#">2</a>
+                            <a class="next" href="#">下一页</a>
+                            <span>共<i>2</i>条</span>
+                            <span>共<i>2</i>页</span>
+                            <span>跳到第<input type="" placeholder="" value="">页</span>
+                            <a class="jumps" href="#">跳转</a>
+                        </div>
+                    </div>
+                    <div class="pane" >
+                        <div class="panes-tab upload-tab">
+                            <h3>发件人地址薄</h3>
+                        </div>
+                        <div class="lzy-tab2">
+                            <table width="1089" border="0" cellspacing="0" cellpadding="0" class="tab-pick">
+                                <tr>
+                                    <td>发件人姓名/电话 <input placeholder="" value="" name="" ></td>
+                                    <td align="right"><a href="#">新建发件人</a></td>
+                                </tr>
+                            </table>
+                            <table width="1089" border="0" cellspacing="0" cellpadding="0" class="tab-pick-bk tab-capital">
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>电话</th>
+                                    <th>城市</th>
+                                    <th>地址</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>邓杰</td>
+                                    <td>18611688681</td>
+                                    <td>北京</td>
+                                    <td>朝阳区北苑路</td>
+                                    <td><a href="#">修改资料</a>|<a href="#">删除</a></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="lzy-page clearfix">
+                            <a class="previous" href="#">上一页</a>
+                            <a class="or" href="#">1</a>
+                            <a href="#">2</a>
+                            <a class="next" href="#">下一页</a>
+                            <span>共<i>2</i>条</span>
+                            <span>共<i>2</i>页</span>
+                            <span>跳到第<input type="" placeholder="" value="">页</span>
+                            <a class="jumps" href="#">跳转</a>
+                        </div>
+                    </div>
+                    <div class="pane">
+                        <div class="panes-tab password-tab">
+                            <h3>密码修改</h3>
+                        </div>
+                        <form class="form-horizontal" action="/user/editpassword" method="post">
+                        <div class="login_m">
+                            <div class="login_boder">
+                                <div class="login_padding">
+                                    <h2>旧密码<span id="editpassword_tip" class="info_tip_oldpassword"></span></h2>
+                                    <label>
+                                        <input type="text" placeholder="" value="" class="txt_input txt_input2" id="oldPassword"name="oldPassword">
+                                        <p style="font-size:12px;">*密码必须包含字母</p>
+                                    </label>
+
+                                    <h2>新密码<span id="editpassword_tip" class="info_tip_newpassword"></span></h2>
+                                    <label>
+                                        <input type="text" placeholder="" value="" class="txt_input txt_input2" id="newPassword" name="newPassword">
+                                    </label>
+                                    <h2>重复新密码<span id="editpassword_tip" class="info_tip_newpassword2"></span></h2>
+                                    <label>
+                                        <input type="password" class="txt_input" id="newPassword2" name="newPassword2">
+                                    </label>
+
+                                    <div class="rem_sub">
+                                        <div class="clearfix"><input type="submit" value="保 存" id="buttoneditpassword" name="button" class="sub_button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="lzy-adaption">
+        <div class="lzy-copyright">
+            <p>Copyright © 2012 xLobo.com, YMT GLOBAL. All Rights Reserved. 沪ICP备16004361号</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="../static/third-party/jquery/jquery.min.js"></script>
+<script>
+    $("#buttoneditpassword").on("click",function(){
+        var check=true;
+        if ($("#oldPassword").val()==""){
+            $(".info_tip_oldpassword").text("(请输入正确旧密码)")
+            check=false
+        }else{
+            $(".info_tip_oldpassword").text("");
+        }
+        if ($("#newPassword").val()==""){
+            $(".info_tip_newpassword").text("(请输入正确密码)")
+            check=false
+        }else{
+            $(".info_tip_newpassword").text("");
+        }
+        if ($("#newPassword").val()==$("#oldPassword").val()){
+            $(".info_tip_newpassword").text("(不能与原密码一致)")
+            check=false
+        }else{
+            $(".info_tip_newpassword").text("");
+        }
+        if ($("#newPassword2").val()!=$("#newPassword").val()){
+            $(".info_tip_newpassword2").text("(密码不一致)")
+            check=false
+        }else{
+            $(".info_tip_newpassword2").text("");
+        }
+
+        if (!check){
+            return false
+        }
+    })
+</script>
+</html>

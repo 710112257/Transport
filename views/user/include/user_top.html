@@ -1,0 +1,26 @@
+<header id="lzy-header">
+    <div class="lzy-container clearfix">
+        <div class="lzy-he-logo">
+            <h1>
+                <a href="/index"><img src="../static/img/mylogo.png" title="" about="" name=""></a>
+            </h1>
+        </div>
+        <div class="lzy-che-nav">
+            <ul>
+                <li><a href="/user/index" class="{{.data.currentIndex}}">用户首页</a></li>
+                <li><a href="/user/order" class="{{.data.currentOrder}}">订单</a></li>
+                <li><a href="/user/capital" class="{{.data.currentCapital}}">资金</a></li>
+                <li><a href="/user/library" class="{{.data.currentLibrary}}">库存</a></li>
+                <li><a href="/user/info" class="{{.data.currentInfo}}">个人信息</a></li>
+            </ul>
+        </div>
+
+        <div class="lzy-register">
+            <ul>
+                <li><span  class="sign" >欢迎，{{.data.username}}</span></li>
+                <li><a href="#">用户设置</a></li>
+                <li><a href="/user/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

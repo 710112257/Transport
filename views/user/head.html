@@ -1,0 +1,12 @@
+<link type="text/css" rel="stylesheet" href="../static/css/core.css">
+<link type="text/css" rel="stylesheet" href="../static/css/home.css">
+<script type="text/javascript" src="../static/third-party/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../static/third-party/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tabPanel ul li').click(function () {
+            $(this).addClass('hit').siblings().removeClass('hit');
+            $('.panes>div:eq(' + $(this).index() + ')').show().siblings().hide();
+        })
+    })
+</script>
